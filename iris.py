@@ -76,8 +76,8 @@ st.write(prediction_prob)
 
 st.subheader("Feature Importance")
 importance = model.feature_importances_
-print(importances)
-indices = np.argsort(importances)
+print(importance)
+indices = np.argsort(importance)
 #print(indies)
 plt.figure(figsize = (10, 4))
 plt.title("Feature Importance")
