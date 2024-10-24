@@ -92,7 +92,7 @@ st.subheader("Histogram of Features")
 fig, axes = plt.subplots(2, 2, figsize = (12, 8))
 axes = axes.flatten()
 for i, ax in enumerate(axes):
-    sns.histplot(df[iris.feature_names[i]], kde=True, ax=ax[i])
+    sns.histplot(df[iris.feature_names[i]], kde=True, ax=ax)
     ax.set_title(iris.feature_names[i])
 plt.tight_layout()
 st.pyplot(fig)
